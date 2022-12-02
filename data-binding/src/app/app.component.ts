@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding';
+  imagePath = '/assets/images/sample.jpg';
+  defaultVal = 'Athul';
+  
+  passValueToComponent(e:any){
+    console.log(e.target.value);
+  }
 }

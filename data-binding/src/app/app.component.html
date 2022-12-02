@@ -3,4 +3,19 @@
   <h2>String Interploation</h2>
   <p>{{title}}
   </p>
+
+</div>
+
+<div>
+  <h2>Property Binding</h2>
+  <img [src]="imagePath" alt="Broken Fridge" width="50">
+</div>
+<div>
+  <h2>Event Binding</h2>
+  <input type="text" (input)="passValueToComponent($event)">
+</div>
+<div>
+  <h2>Two way Binding</h2>
+  <input type="text" [(ngModel)]="defaultVal">
+  {{defaultVal}}
 </div>
